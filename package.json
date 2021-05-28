@@ -1,0 +1,27 @@
+{
+  "name": "restful-node-app",
+  "version": "1.0.0",
+  "description": "restful-app",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "wudeh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "forwarded": "^0.1.2",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.4.0",
+    "md5.js": "^1.3.5",
+    "mongoose": "^5.3.16",
+    "ms": "^2.1.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  }
+}
